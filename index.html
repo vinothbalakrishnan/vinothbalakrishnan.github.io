@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,6 +20,7 @@
       }
       a, a:focus, a:hover {
         color: #212529;
+        opacity: .65;
       }
       body {
         font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -32,13 +34,9 @@
       h1, h2, h3, h4, h5, h6 {
         color: #2d2d2d;
       }
-      .section1 {
-        position: relative;
-        min-height: 100vh;
-        background: #f6f7fb;
-      }
       .section1 .text {
-        padding: 200px 0;
+        padding-top: 100px;
+        padding-bottom: 20px;
       }
       .section2 .fa {
         font-size: 2em;
@@ -49,11 +47,19 @@
         display: flex;
         line-height: 1.45;
       }
-      .copy {
-        position: absolute;
-        bottom: 2px;
-        opacity: .5;
-        left: 0;
+      .section1 img {
+        background: transparent;
+        border: none;
+        width: 210px;
+      }
+      p {
+        margin-bottom: 5px;
+      }
+      @media (max-width: 575.98px) {
+        .section1 .text {
+          padding-top: 40px;
+          padding-bottom: 10px;
+        }
       }
     </style>
   </head>
@@ -61,18 +67,14 @@
     <div class="container-fluid">
       <div class="row section1">
         <div class="col-12 text-center text">
-          <img src="./logo.jpg" class="img-fluid img-thumbnail" />
+          <img src="./logo.png" class="img-fluid img-thumbnail" />
           <h2 style="padding-top: 20px;">Sorry, this site is under renovation currently</h2>
         </div>
-        <div class="col-8 offset-2">
-          <div class="row section2 text-right">
-            <div class="offset-md-1 col-md-5 sec">
-              <i class="fa fa-envelope"></i> <a href="mailto:support@anandhalayahomes.in">support@anandhalayahomes.in</a>
-            </div>
-            <div class="offset-md-1 col-md-5 sec">
-              <i class="fa fa-phone"></i> <a href="tel:+919940205053">+91 99402 05053</a>&nbsp;/&nbsp;<a href="tel:+919952939210">+91 99529 39210</a>
-            </div>
-          </div>
+        <div class="col-12 text-center">
+          <p>Reach us at,</p>
+          <p style="padding-top: 10px;"><a href="tel:+919940205053">+91 99402 05053</a>&nbsp;/&nbsp;<a href="tel:+919952939210">+91 99529 39210</a></p>
+          <small>or</small>
+          <p><a href="mailto:support@anandhalayahomes.in">support@anandhalayahomes.in</a></p>
         </div>
       </div>
     </div>
